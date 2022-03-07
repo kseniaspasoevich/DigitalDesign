@@ -22,6 +22,6 @@ function getDayInfo(date) {
 
 }
 
-console.log(getDayInfo("15.12.2021"));
-console.log(getDayInfo("01.01.2022"));
-console.log(getDayInfo("20.12.2021"));
+console.log(getDayInfo("15.12.2021")); //Среда, 3 неделя Декабря 2021 года
+console.log(getDayInfo("01.01.2022")); //Суббота, 1 неделя Января 2022 года
+console.log(getDayInfo("20.12.2021")); //Понедельник, 4 неделя Декабря 2021 года
