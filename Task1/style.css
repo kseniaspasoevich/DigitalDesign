@@ -1,0 +1,367 @@
+html{
+    font-family: "Arial Unicode MS", sans-serif;
+    color: black;
+    background-color: wheat;
+    width: 100%;
+    max-width: 2300px;
+}
+
+/*-------------- навигационное меню-----------------------------*/
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    height: 9%;
+    font-size: xx-large;
+    z-index: 12;
+    background-color: wheat;
+    opacity: 70%;
+}
+
+.full-menu{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left:5%;
+}
+
+.full-menu li{
+    list-style: none;
+    margin-left: 3px;
+}
+
+.full-menu a{
+    margin-left: 100px;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.full-menu a:hover{
+    color: orange;
+    transition: color 0.5s ease-in-out;
+}
+
+/*-------------- Главная -----------------------------*/
+#home{
+    height: 1400px;
+    background-color: white;
+}
+
+@keyframes FadeInOut {
+    0% {opacity:1;}
+    25% {opacity:.75;}
+    50% {opacity:.5;}
+    100% {opacity:0;}
+}
+
+.thumbnail img {
+    position:absolute;
+    left:0;
+    width:100%;
+    height: 800px;
+    border-radius: 10%;
+
+}
+
+.thumbnail img.logo2 {
+    -webkit-animation-name: FadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-direction: alternate;
+}
+
+.more-web-technologies{
+    position: absolute;
+    top: 900px;
+    left: 100px;
+    width: 30%;
+    height: 350px;
+    font-style: italic;
+    font-size: x-large;
+    border-style: dashed;
+    border-color: #672a65;
+    transition: border-color 300ms;
+}
+
+.more-web-technologies:hover {
+    border-color: orange;
+    background-color: wheat;
+}
+
+#aside-paragraph{
+    position: relative;
+    left: 10px;
+}
+
+.intro{
+    position: absolute;
+    top: 870px;
+    left: 40%;
+    font-size: x-large;
+}
+
+.card-container{
+    position: relative;
+    top: 950px;
+    left: 40%;
+    display: flex;
+    flex-direction: row;
+    height: 240px;
+    width: 750px;
+}
+
+.card{
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    border-style: inset;
+    border-color: black;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.back{
+    z-index: 1;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 5px;
+    backface-visibility: hidden;
+}
+
+.front{
+    z-index:2;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+
+/*-------------- Сведения-----------------------------*/
+#about{
+    background-color: white;
+    height: 900px;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+    justify-content: center;
+}
+
+.card-about{
+    margin-left: 10px;
+    margin-top: 200px;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    width: 600px;
+    height: 500px;
+}
+
+.card-about:hover{
+    transform: rotateY(180deg);
+    color: #672a65;
+}
+
+.back-about{
+    z-index: 1;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 5px;
+    backface-visibility: hidden;
+    font-size: large;
+    margin-left: 1px;
+}
+
+.front-about{
+    z-index:2;
+    backface-visibility: hidden;
+}
+
+.what-is-jam-title, .start-title, .meaning-title{
+    position: absolute;
+    font-size: 90px;
+    line-height: 100px;
+    left: 780px;
+    color: transparent;
+    background: conic-gradient(
+            #2C3E50 12%, #4CA1AF 12%,
+            #0F2027 33%, #203A43 33%,
+            #2C5364 55%, #b92b27 55%,
+            #c31432 70%, #240b36 70%,
+            #ad5389 87%, #3c1053 87%);
+    background-size: 50%;
+    -webkit-background-clip: text;
+    animation: expand-rev 0.5s ease forwards ;
+    cursor: pointer;
+}
+
+.what-is-jam-title:hover, .start-title:hover, .meaning-title:hover{
+    animation: expand 0.5s ease forwards;
+}
+
+.what-is-jam-title{
+    top: 45%;
+    left: 15%;
+}
+
+.start-title{
+    top: 45%;
+    left: 25%;
+}
+
+.meaning-title{
+    top: 45%;
+    left: 35%;
+}
+
+/*-------------- Характеристики -----------------------------*/
+
+#usage{
+    height: 800px;
+}
+
+.work-example{
+    position: absolute;
+    left: 45%;
+    top: 2450px;
+    background-color: wheat;
+    border: thin silver solid;
+}
+
+figcaption{
+    font-weight: bolder;
+    width: 500px;
+    margin-left: 20%;
+}
+
+.usage-text{
+    width: 900px;
+    height: 700px;
+    position: absolute;
+    left: 20px;
+    top:2250px;
+}
+
+#usage-text{
+    font-size: x-large;
+    position: absolute;
+    left: 10px;
+    top:250px;
+    color: #672a65;
+}
+
+.traditional-workflow{
+    position: absolute;
+    margin-top: 350px;
+}
+
+.jamStack-workflow{
+    position: absolute;
+    margin-top: 600px;
+}
+
+.traditional-workflow, .jamStack-workflow{
+    color: #672a65;
+    font-size: large;
+}
+
+#traditional-workflow, #jamStack-workflow{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/*-------------- Преимущества и ограничения-----------------------------*/
+#pros-and-cons{
+    background-color: white;
+    height: 800px;
+}
+
+article{
+    /*background-color: wheat;*/
+    color: #672a65;
+    font-size: x-large;
+    height: 300px;
+    width: 1500px;
+    position: absolute;
+    left: 30px;
+    top: 3300px;
+}
+
+article:hover{
+    color: #2C3E50;
+    font-weight: bold;
+    transition: color 0.5s ease-in-out;
+}
+.main-head{
+    position: absolute;
+    left: 30px;
+    font-weight: bold;
+}
+
+/*-------------- footer -----------------------------*/
+footer{
+    color: black;
+    height: 50px;
+    font-family: "Berlin Sans FB", serif;
+    font-size: x-large;
+    font-style: italic;
+    padding-left: 50%;
+}
+
+button{
+    position: relative;
+    left: 70%;
+    bottom: 50px;
+    height: 50px;
+    width: 120px;
+    border-radius: 10%;
+    background-color: wheat;
+    color: #672a65;
+    opacity: 65%;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+@keyframes expand {
+    0%{
+        background-size: 50%;
+        background-position: 0 0 ;
+    }
+    20%{
+        background-size: 55%;
+        background-position: 0 1em ;
+    }
+
+    100%{
+        background-size: 325%;
+        background-position: -10em -4em ;
+
+    }
+}
+
+@keyframes expand-rev {
+    100%{
+        background-size: 50%;
+        background-position: 0 0 ;
+    }
+    20%{
+        background-size: 55%;
+        background-position: 0 1em ;
+    }
+
+    0%{
+        background-size: 325%;
+        background-position: -10em -4em ;
+
+    }
+}
